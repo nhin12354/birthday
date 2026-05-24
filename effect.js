@@ -173,11 +173,11 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(1800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==48){
-				$("p:nth-child(47)").fadeOut('slow').promise().done(function () {
+			$("p:nth-child("+i+")").fadeIn(1500).delay(1000);
+			if(i==46){
+				$("p:nth-child(45)").fadeOut('slow').promise().done(function () {
 					$('#birthday-photo-wrapper').css('display','block').hide().fadeIn(1500);
 				});
 				
